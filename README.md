@@ -8,7 +8,7 @@
 ```
 git clone https://github.com/koushikavula/cyberpy
 cd cyberpy
-bash phishdog.sh
+bash phish.sh
 ```
 
 #NMAP
