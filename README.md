@@ -6,7 +6,7 @@
 ### Port Forwarding using Ngrok or Serveo
 ### Usage:
 ```
-git clone https://github.com/koushikavula/cyberpy.git
+git clone https://github.com/koushikavula/cyberpy
 cd cyberpy
 bash phishdog.sh
 ```
@@ -27,7 +27,6 @@ Once you find the inital ports in around 10 seconds, you then can start manually
 1. **UDP:**	  Runs "Basic" on UDP ports (~5 minutes)  
 1. **Full:** 	Runs a full range port scan, then runs a thorough scan on new ports (~5-10 minutes)  
 1. **Vulns:**	Runs CVE scan and nmap Vulns scan on all found ports (~5-15 minutes)  
-1. **Recon:**	Runs "Basic" scan "if not yet run", then suggests recon commands "i.e. gobuster, nikto, smbmap" based on the found ports, then prompts to automatically run them  
 1. **All:**  	Runs all the scans consecutively (~20-30 minutes)   
 # Requirements:
 **Required:** Gobuster v3.0 or higher, as it is not backward compatible.  
@@ -39,8 +38,8 @@ apt-get install gobuster --only-upgrade
 # Examples of use:
 ```
 cd cyberpy
-./nmapAutomator.sh <TARGET-IP> <TYPE>  
-./nmapAutomator.sh 10.1.1.1 All  
-./nmapAutomator.sh 10.1.1.1 Basic  
-./nmapAutomator.sh 10.1.1.1 Recon  
+./nmap.sh <TARGET-IP> <TYPE>  
+./nmap.sh 10.1.1.1 All  
+./nmap.sh 10.1.1.1 Basic  
+./nmap.sh 10.1.1.1 Vulns 
 
