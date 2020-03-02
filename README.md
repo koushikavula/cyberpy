@@ -38,8 +38,8 @@ apt-get install gobuster --only-upgrade
 # Examples of use:
 ```
 cd cyberpy
-./nmap.sh <TARGET-IP> <TYPE>  
-./nmap.sh 10.1.1.1 All  
-./nmap.sh 10.1.1.1 Basic  
-./nmap.sh 10.1.1.1 Vulns 
+bash nmap.sh <TARGET-IP> <TYPE>  
+bash nmap.sh 103.235.106.26 All  
+bash nmap.sh 103.235.106.26 Basic  
+bash nmap.sh 103.235.106.26 Vulns 
 
